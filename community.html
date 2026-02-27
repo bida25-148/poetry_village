@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Community - Poetry Village</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+<nav class="navbar navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Poetry Village 💜</a>
+    </div>
+</nav>
+ 
+<section class="page-header text-center">
+    <div class="container">
+        <h1>Village Community</h1>
+        <p>A space for conversations and connection.</p>
+    </div>
+</section>
+ 
+<section class="container py-5">
+ 
+    <!-- Create Post -->
+    <div class="post-box mb-4">
+        <textarea id="postInput" class="form-control mb-3"
+        rows="3" placeholder="What's on your mind?"></textarea>
+ 
+        <button class="btn btn-main" onclick="addPost()">Post</button>
+    </div>
+ 
+    <!-- Posts Feed -->
+    <div id="postFeed">
+ 
+        <div class="chat-post">
+            <div class="post-header">
+                <strong>Mpho Thato</strong>
+                <span class="time">2h ago</span>
+            </div>
+            <p>How do you overcome writer’s block before performing?</p>
+        </div>
+ 
+        <div class="chat-post">
+            <div class="post-header">
+                <strong>Lerato Palesa</strong>
+                <span class="time">5h ago</span>
+            </div>
+            <p>Does vulnerability make poetry stronger?</p>
+        </div>
+ 
+    </div>
+ 
+</section>
+ 
+<script>
+function addPost() {
+    const input = document.getElementById("postInput");
+    const feed = document.getElementById("postFeed");
+ 
+    if (input.value.trim() === "") return;
+ 
+    const newPost = document.createElement("div");
+    newPost.className = "chat-post";
+ 
+    newPost.innerHTML = `
+        <div class="post-header">
+            <strong>You</strong>
+            <span class="time">Just now</span>
+        </div>
+        <p>${input.value}</p>
+    `;
+ 
+    feed.prepend(newPost);
+    input.value = "";
+}
+</script>
+ 
+</body>
+</html>

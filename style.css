@@ -1,0 +1,181 @@
+body {
+    background-color: #000000;
+    color: #e6e6ff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #000000;
+    border-bottom: 2px solid #8e82fe;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #8e82fe !important;
+}
+
+.nav-link {
+    color: #ffffff !important;
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #8e82fe !important;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 100px 0;
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #8e82fe;
+}
+
+.hero-text {
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+.hero-box {
+    background-color: #111111;
+    border: 2px solid #8e82fe;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Feature Strip */
+.feature-strip {
+    padding: 60px 0;
+    background-color: #0d0d0d;
+}
+
+.feature-strip h4 {
+    color: #8e82fe;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 0;
+    background-color: #8e82fe;
+    color: #000000;
+}
+
+.cta-section h2 {
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn-main {
+    background-color: #8e82fe;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+}
+
+.btn-main:hover {
+    background-color: #b4adff;
+    color: #000;
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #8e82fe;
+}
+
+.poet-section {
+    padding: 30px;
+    border-bottom: 1px solid #444;
+}
+
+.poet-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #9d8df1; /* periwinkle border */
+}
+
+.poet-name {
+    color: #9d8df1;
+    font-weight: 600;
+}
+
+.booking-status {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.available {
+    color: #a8ffbf;
+}
+
+.busy {
+    color: #ff9e9e;
+}
+
+.post-box {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 10px;
+}
+ 
+.chat-post {
+    background-color: #1c1c1c;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-left: 4px solid #9d8df1;
+}
+ 
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+ 
+.time {
+    color: #aaa;
+    font-size: 12px;
+}
+ 
+.poet-select {
+    background-color: #1c1c1c;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+ 
+.poet-select:hover {
+    transform: translateY(-5px);
+    border: 1px solid #9d8df1;
+}
+ 
+.poet-select img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+ 
+.status {
+    font-weight: 600;
+}
+ 
+.available {
+    color: #a8ffbf;
+}
+ 
+.busy {
+    color: #ff9e9e;
+}
