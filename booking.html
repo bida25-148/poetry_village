@@ -1,103 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Book a Poet - Poetry Village</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Events & Booking | Poetry Village</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
+
 <body>
- 
-<nav class="navbar navbar-dark">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Poetry Village 💜</a>
-    </div>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+<div class="container">
+
+<a class="navbar-brand" href="index.html">Poetry Village 💜</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="profiles.html">Poets</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="upload.html">Submit Poem</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active" href="booking.html">Events</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="mentor.html">Mentorship</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="community.html">Community</a>
+</li>
+
+</ul>
+
+</div>
+</div>
 </nav>
- 
-<section class="page-header text-center">
-    <div class="container">
-        <h1>Book a Poet</h1>
-        <p>Select your preferred voice for the event.</p>
-    </div>
-</section>
- 
-<section class="container py-5">
- 
-    <!-- STEP 1: Select Poet -->
-    <h4 class="mb-4 text-center">Choose a Poet</h4>
- 
-    <div class="row g-4 mb-5">
- 
-        <div class="col-md-4">
-            <div class="poet-select" onclick="selectPoet('Kgato Hope Mosweu')">
-                <img src="Images/WhatsApp Image 2026-02-25 at 11.17.43.jpeg" class="img-fluid rounded-circle mb-3">
-                <h5>Kgato Hope Mosweu</h5>
-                <p class="status available">Available</p>
-            </div>
-        </div>
- 
-        <div class="col-md-4">
-            <div class="poet-select" onclick="selectPoet('Oratile Precious Poonyane')">
-                <img src="Images/WhatsApp Image 2026-02-25 at 11.18.25.jpeg" class="img-fluid rounded-circle mb-3">
-                <h5>Oratile Precious Poonyane</h5>
-                <p class="status busy">Currently Booked</p>
-            </div>
-        </div>
- 
-        <div class="col-md-4">
-            <div class="poet-select" onclick="selectPoet('Kebakaone Olebogeng')">
-                <img src="Images/WhatsApp Image 2026-02-25 at 12.01.34.jpeg" class="img-fluid rounded-circle mb-3">
-                <h5>Kebakaone Olebogeng</h5>
-                <p class="status available">Available</p>
-            </div>
-        </div>
- 
-    </div>
- 
-    <!-- STEP 2: Booking Form -->
-    <div id="bookingForm" style="display:none;">
- 
-        <h4 class="mb-3 text-center">Event Details</h4>
- 
-        <form class="custom-form">
- 
-            <input type="text" id="selectedPoet"
-            class="form-control mb-3"
-            readonly>
- 
-            <input type="text"
-            class="form-control mb-3"
-            placeholder="Event Name" required>
- 
-            <input type="date"
-            class="form-control mb-3" required>
- 
-            <input type="text"
-            class="form-control mb-3"
-            placeholder="Location" required>
- 
-            <textarea class="form-control mb-3"
-            rows="4"
-            placeholder="Event Description"></textarea>
- 
-            <button class="btn btn-main w-100">
-                Submit Booking Request
-            </button>
- 
-        </form>
-    </div>
- 
-</section>
- 
-<script>
-function selectPoet(name) {
-    document.getElementById("bookingForm").style.display = "block";
-    document.getElementById("selectedPoet").value = "Booking: " + name;
-    window.scrollTo({ top: document.getElementById("bookingForm").offsetTop - 100, behavior: 'smooth' });
-}
-</script>
- 
+
+
+<!-- Page Header -->
+<div class="container mt-5 text-center">
+
+<h1>Poetry Events & Booking</h1>
+
+<p>
+Discover upcoming poetry performances or book a poet for your event.
+</p>
+
+</div>
+
+
+<!-- Upcoming Events -->
+<div class="container mt-4">
+
+<h3>Upcoming Events</h3>
+
+<div class="row">
+
+<div class="col-md-4">
+
+<div class="card">
+
+<div class="card-body">
+
+<h5>Open Mic Night</h5>
+
+<p>Date: 12 August 2026</p>
+
+<p>Location: Gaborone Cultural Centre</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="card">
+
+<div class="card-body">
+
+<h5>Youth Poetry Slam</h5>
+
+<p>Date: 30 August 2026</p>
+
+<p>Location: UB Amphitheatre</p>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="col-md-4">
+
+<div class="card">
+
+<div class="card-body">
+
+<h5>Spoken Word Showcase</h5>
+
+<p>Date: 10 September 2026</p>
+
+<p>Location: Maitisong Theatre</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Booking Form -->
+<div class="container mt-5">
+
+<h3>Book a Poet for Your Event</h3>
+
+<p>
+Fill in the form below if you would like to invite a poet to perform at your event.
+</p>
+
+<form>
+
+<label>Your Name</label>
+<input type="text" class="form-control" required>
+
+<label>Email Address</label>
+<input type="email" class="form-control" required>
+
+<label>Select Poet</label>
+
+<select class="form-control">
+
+<option>Amara Soul</option>
+<option>Neo Rivers</option>
+<option>Luna Verse</option>
+
+</select>
+
+<label>Event Date</label>
+<input type="date" class="form-control">
+
+<label>Event Location</label>
+<input type="text" class="form-control">
+
+<label>Additional Details</label>
+<textarea class="form-control"></textarea>
+
+<br>
+
+<button class="btn btn-primary">Submit Booking Request</button>
+
+</form>
+
+</div>
+
+
+<!-- Footer -->
+<footer class="text-center mt-5 p-4">
+
+<p>© 2026 Poetry Village | Built by Kgato Mosweu 💜</p>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

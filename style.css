@@ -1,181 +1,131 @@
-body {
-    background-color: #000000;
-    color: #e6e6ff;
-    font-family: Arial, sans-serif;
-    margin: 0;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f3ff;   /* soft periwinkle background */
+    margin:0;
+    color:#222;
 }
 
-/* Navbar */
-.navbar {
-    background-color: #000000;
-    border-bottom: 2px solid #8e82fe;
+
+
+/* NAVIGATION BAR */
+
+.navbar{
+    background-color:#000;
 }
 
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.4rem;
-    color: #8e82fe !important;
+.navbar-brand{
+    font-weight:bold;
+    letter-spacing:1px;
 }
 
-.nav-link {
-    color: #ffffff !important;
-    margin-left: 15px;
+.nav-link{
+    color:white !important;
 }
 
-.nav-link:hover {
-    color: #8e82fe !important;
+.nav-link:hover{
+    color:#c8c6ff !important;
 }
 
-/* Hero Section */
-.hero-section {
-    padding: 100px 0;
+
+
+/* HERO SECTION */
+
+.hero{
+    background:linear-gradient(135deg,#6f6cff,#9fa0ff);
+    color:white;
+    padding:100px 20px;
 }
 
-.hero-title {
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: #8e82fe;
+.hero h1{
+    font-size:48px;
+    font-weight:bold;
 }
 
-.hero-text {
-    font-size: 1.1rem;
-    margin-top: 15px;
+.hero p{
+    font-size:18px;
 }
 
-.hero-box {
-    background-color: #111111;
-    border: 2px solid #8e82fe;
-    padding: 40px;
-    border-radius: 10px;
-    text-align: center;
+
+
+/* FEATURE SECTIONS */
+
+section{
+    padding:20px;
 }
 
-/* Feature Strip */
-.feature-strip {
-    padding: 60px 0;
-    background-color: #0d0d0d;
+h2{
+    margin-bottom:20px;
 }
 
-.feature-strip h4 {
-    color: #8e82fe;
+
+
+/* CARDS (events / poets) */
+
+.card{
+    border:none;
+    box-shadow:0px 3px 10px rgba(0,0,0,0.1);
 }
 
-/* CTA Section */
-.cta-section {
-    padding: 80px 0;
-    background-color: #8e82fe;
-    color: #000000;
+.card:hover{
+    transform:translateY(-4px);
+    transition:0.3s;
 }
 
-.cta-section h2 {
-    font-weight: bold;
+
+
+/* BUTTONS */
+
+.btn-primary{
+    background-color:#6f6cff;
+    border:none;
 }
 
-/* Buttons */
-.btn-main {
-    background-color: #8e82fe;
-    color: #000;
-    border: none;
-    padding: 10px 20px;
+.btn-primary:hover{
+    background-color:#5755e8;
 }
 
-.btn-main:hover {
-    background-color: #b4adff;
-    color: #000;
+.btn-outline-dark{
+    border-color:#6f6cff;
+    color:#6f6cff;
 }
 
-/* Footer */
-footer {
-    background-color: #000000;
-    text-align: center;
-    padding: 20px;
-    border-top: 2px solid #8e82fe;
+.btn-outline-dark:hover{
+    background-color:#6f6cff;
+    color:white;
 }
 
-.poet-section {
-    padding: 30px;
-    border-bottom: 1px solid #444;
+
+
+/* JOIN SECTION */
+
+.join-section{
+    background:#6f6cff;
+    color:white;
+    padding:60px 20px;
 }
 
-.poet-img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 4px solid #9d8df1; /* periwinkle border */
+
+
+/* FORMS */
+
+form{
+    max-width:600px;
 }
 
-.poet-name {
-    color: #9d8df1;
-    font-weight: 600;
+form label{
+    margin-top:10px;
 }
 
-.booking-status {
-    font-weight: 600;
-    font-size: 14px;
+form input, form select, form textarea{
+    margin-bottom:10px;
 }
 
-.available {
-    color: #a8ffbf;
-}
 
-.busy {
-    color: #ff9e9e;
-}
 
-.post-box {
-    background-color: #1c1c1c;
-    padding: 20px;
-    border-radius: 10px;
-}
- 
-.chat-post {
-    background-color: #1c1c1c;
-    padding: 18px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    border-left: 4px solid #9d8df1;
-}
- 
-.post-header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    margin-bottom: 8px;
-}
- 
-.time {
-    color: #aaa;
-    font-size: 12px;
-}
- 
-.poet-select {
-    background-color: #1c1c1c;
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.3s;
-}
- 
-.poet-select:hover {
-    transform: translateY(-5px);
-    border: 1px solid #9d8df1;
-}
- 
-.poet-select img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-}
- 
-.status {
-    font-weight: 600;
-}
- 
-.available {
-    color: #a8ffbf;
-}
- 
-.busy {
-    color: #ff9e9e;
+/* FOOTER */
+
+footer{
+    background:#000;
+    color:white;
+    padding:20px;
 }

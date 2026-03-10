@@ -1,151 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Poetry Village</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Poetry Village</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Poetry Village 💜</a>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+<a class="navbar-brand" href="index.html">Poetry Village 💜</a>
 
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="upload.html">Upload</a></li>
-                <li class="nav-item"><a class="nav-link" href="profiles.html">Profiles</a></li>
-                <li class="nav-item"><a class="nav-link" href="booking.html">Bookings</a></li>
-                <li class="nav-item"><a class="nav-link" href="mentor.html">Mentorship</a></li>
-                <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
-            </ul>
-        </div>
-    </div>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="profiles.html">Poets</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="upload.html">Submit Poem</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="booking.html">Events</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="mentor.html">Mentorship</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="community.html">Community</a>
+</li>
+
+</ul>
+
+</div>
+</div>
 </nav>
 
+
 <!-- Hero Section -->
-<section class="hero-section">
-    <div class="container">
-        <div class="row align-items-center">
+<section class="hero text-center">
 
-            <div class="col-md-6">
-                <h1 class="hero-title">A Platform for Poets to Be Seen</h1>
-                <p class="hero-text">
-                    Upload your work. Connect with other poets.
-                    Get mentorship. Get booked.
-                </p>
+<div class="container">
 
-                <a href="upload.html" class="btn btn-main mt-3">Start Sharing</a>
-            </div>
+<h1>Welcome to Poetry Village 💜</h1>
 
-            <div class="col-md-6">
-                <div class="hero-box">
-                    <p>
-                        “This village exists so no poet feels unheard.”
-                    </p>
-                </div>
-            </div>
+<p class="lead">
+A creative space where poets share their words and voices.
+</p>
 
-        </div>
-    </div>
+
+</div>
+
 </section>
 
-<!-- Feature Strip -->
-<section class="feature-strip">
-    <div class="container">
-        <div class="row text-center">
 
-            <div class="col-md-4">
-                <h4>Upload & Publish</h4>
-                <p>Share your original poems and build your presence.</p>
-            </div>
+<!-- Features Section -->
+<section class="container mt-5">
 
-            <div class="col-md-4">
-                <h4>Performance Exposure</h4>
-                <p>Get discovered and receive booking requests.</p>
-            </div>
+<div class="row text-center">
 
-            <div class="col-md-4">
-                <h4>Mentorship Support</h4>
-                <p>Develop your craft with guidance from experienced poets.</p>
-            </div>
+<div class="col-md-4">
 
-        </div>
-    </div>
+<h4>Discover Poets</h4>
+
+<p>
+Explore different poets, their published work, and performance history.
+</p>
+
+<a href="profiles.html" class="btn btn-outline-dark">View Poets</a>
+
+</div>
+
+
+<div class="col-md-4">
+
+<h4>Poetry Events</h4>
+
+<p>
+Find poetry performances and book poets for spoken word events.
+</p>
+
+<a href="booking.html" class="btn btn-outline-dark">See Events</a>
+
+</div>
+
+
+<div class="col-md-4">
+
+<h4>Community Space</h4>
+
+<p>
+Interact with poets, discuss ideas, and support creative writing.
+</p>
+
+<a href="community.html" class="btn btn-outline-dark">Join Discussion</a>
+
+</div>
+
+</div>
+
 </section>
 
-<!-- Call to Action -->
-<section class="cta-section text-center">
-    <div class="container">
-        <h2>Join the Village</h2>
-        <p>Whether you're a beginner or a performer, there is space for you here.</p>
 
-        <button onclick="showForm()" class="btn btn-outline-light mt-3">Join the Village</button>
+<!-- Event Highlight -->
+<section class="container mt-5 text-center">
 
-    </div>
+<h2>Upcoming Poetry Night</h2>
+
+<p>
+An open mic evening where poets perform their latest work.
+</p>
+
+<p><strong>Date:</strong> 12 August 2026</p>
+
+<p><strong>Location:</strong> Gaborone Cultural Centre</p>
+
+<a href="booking.html" class="btn btn-dark">Learn More</a>
+
 </section>
 
-<section id="joinForm" style="display:none;" class="container mt-5">
- 
-  <h3 class="mb-3">Village Registration Form</h3>
- 
-  <form>
- 
-    <label>Full Name:</label>
-    <input type="text" class="form-control mb-3" required>
- 
-    <label>Email Address:</label>
-    <input type="email" class="form-control mb-3" required>
- 
-    <label>Phone Number:</label>
-    <input type="tel" class="form-control mb-3" required>
- 
-    <label>Date of Birth:</label>
-    <input type="date" class="form-control mb-3" required>
- 
-    <label>Stage Name (Optional):</label>
-    <input type="text" class="form-control mb-3">
- 
-    <label>Role:</label>
-    <select class="form-control mb-3" required>
-      <option value="">Select Role</option>
-      <option>Poet</option>
-      <option>Mentor</option>
-      <option>Event Organizer</option>
-      <option>Supporter</option>
-    </select>
- 
-    <button type="submit" class="btn btn-dark">
-      Submit
-    </button>
- 
-  </form>
- 
+
+<!-- Join Section -->
+<section class="join-section text-center mt-5">
+
+<div class="container">
+
+<h2>Join the Village</h2>
+
+<p>
+Become part of a growing creative community.
+</p>
+
+<a href="join.html" class="btn btn-light mt-2">Join Now</a>
+
+</div>
+
 </section>
 
-<footer>
-    <p>© 2026 A village Built With Intention By Kgato M</p>
+
+<!-- Footer -->
+<footer class="text-center mt-5 p-4">
+
+<p>© 2026 Poetry Village | Built by Kgato Mosweu 💜</p>
+
 </footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
-function showForm() {
-  document.getElementById("joinForm").style.display = "block";
-}
-</script>
-
 </body>
 </html>
-
 
 
 
