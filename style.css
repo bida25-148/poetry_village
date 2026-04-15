@@ -1,131 +1,153 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f3ff;   /* soft periwinkle background */
-    margin:0;
-    color:#222;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
-/* NAVIGATION BAR */
+body{
+background-color:white;
+color:#222;
+line-height:1.6;
+}
+
+
+
+section{
+padding:60px 0;
+}
+
+
 
 .navbar{
-    background-color:#000;
+background-color:black;
+padding:15px;
 }
 
 .navbar-brand{
-    font-weight:bold;
-    letter-spacing:1px;
+color:#b8b9ff !important;
+font-size:22px;
+font-weight:bold;
 }
 
 .nav-link{
-    color:white !important;
+color:white !important;
+margin-left:20px;
+font-size:16px;
 }
 
 .nav-link:hover{
-    color:#c8c6ff !important;
+color:#b8b9ff !important;
 }
 
 
 
-/* HERO SECTION */
-
 .hero{
-    background:linear-gradient(135deg,#6f6cff,#9fa0ff);
-    color:white;
-    padding:100px 20px;
+background-color:#b8b9ff;
+color:black;
+text-align:center;
+padding:120px 20px;
 }
 
 .hero h1{
-    font-size:48px;
-    font-weight:bold;
+font-size:48px;
+margin-bottom:15px;
 }
 
 .hero p{
-    font-size:18px;
+font-size:20px;
+margin-bottom:25px;
 }
 
 
 
-/* FEATURE SECTIONS */
-
-section{
-    padding:20px;
+.btn-main{
+background-color:#6c6ff5;
+color:white;
+padding:12px 25px;
+border-radius:5px;
+text-decoration:none;
+font-weight:500;
 }
 
-h2{
-    margin-bottom:20px;
+.btn-main:hover{
+background-color:#4e50d6;
+color:white;
 }
 
-
-
-/* CARDS (events / poets) */
-
-.card{
-    border:none;
-    box-shadow:0px 3px 10px rgba(0,0,0,0.1);
+.btn-outline{
+border:2px solid #6c6ff5;
+color:#6c6ff5;
+padding:10px 25px;
+border-radius:5px;
+text-decoration:none;
 }
 
-.card:hover{
-    transform:translateY(-4px);
-    transition:0.3s;
-}
-
-
-
-/* BUTTONS */
-
-.btn-primary{
-    background-color:#6f6cff;
-    border:none;
-}
-
-.btn-primary:hover{
-    background-color:#5755e8;
-}
-
-.btn-outline-dark{
-    border-color:#6f6cff;
-    color:#6f6cff;
-}
-
-.btn-outline-dark:hover{
-    background-color:#6f6cff;
-    color:white;
+.btn-outline:hover{
+background-color:#6c6ff5;
+color:white;
 }
 
 
+.card-box{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+margin-bottom:25px;
+}
 
-/* JOIN SECTION */
-
-.join-section{
-    background:#6f6cff;
-    color:white;
-    padding:60px 20px;
+.card-box h3{
+color:#6c6ff5;
+margin-bottom:10px;
 }
 
 
+table{
+width:100%;
+background:white;
+}
 
-/* FORMS */
+thead{
+background:#6c6ff5;
+color:white;
+}
+
+table th, table td{
+padding:12px;
+text-align:center;
+border:1px solid #ddd;
+}
+
+
 
 form{
-    max-width:600px;
+background:white;
+padding:30px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
 form label{
-    margin-top:10px;
+font-weight:bold;
 }
 
-form input, form select, form textarea{
-    margin-bottom:10px;
+form input, form select{
+margin-bottom:15px;
 }
 
-
-
-/* FOOTER */
 
 footer{
-    background:#000;
-    color:white;
-    padding:20px;
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+footer p{
+margin:0;
+font-size:14px;
 }
